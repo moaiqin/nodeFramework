@@ -1,0 +1,28 @@
+
+[2019-02-23T18:33:04.160] [INFO] default - 
+start 2019-02-23 18:33:04 GET /test?name=[1,2,3] ::1
+[2019-02-23T18:34:48.616] [INFO] default - 
+start 2019-02-23 18:34:48 GET /test?name=[1,2,3] ::1
+[2019-02-23T18:34:48.623] [INFO] default - complete 200 [32m622ms[39m
+[2019-02-23T18:36:16.545] [INFO] default - 
+start 2019-02-23 18:36:16 GET /test?name=[1,2,3] ::1
+[2019-02-23T18:36:16.550] [INFO] default - 
+complete 200 [32m550ms[39m
+[2019-02-23T18:38:54.738] [INFO] default - 
+start 2019-02-23 18:38:54 GET /test?name=[1,2,3] ::1
+[2019-02-23T18:38:54.745] [INFO] default - 
+complete 200 [32m(744ms)[39m
+[2019-02-23T18:40:11.268] [INFO] default - 
+start 2019-02-23 18:40:11 GET /test?name=[1,2,3] ::1
+[2019-02-23T18:40:11.274] [INFO] default - 
+complete 200 [32m(273ms)[39m
+[2019-02-23T18:42:27.257] [INFO] default - 
+start 2019-02-23 18:42:27 GET /test?name=[1,2,3] ::1
+[2019-02-23T18:42:27.263] [INFO] default - 
+complete 200 (263ms) 
+
+[2019-02-23T18:42:41.243] [INFO] default - 
+start 2019-02-23 18:42:41 GET /test?name=[1,2,3] ::1
+[2019-02-23T18:42:41.248] [INFO] default - 
+complete 200 (248ms) 
+
