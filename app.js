@@ -11,7 +11,7 @@ const path = require('path');
 const static = path.join(__dirname,'public');
 const compress = require('compression');
 const csurf = require('csurf');
-const session = require('express-session');
+// const session = require('express-session');
 const middleware = require('./middlewares');
 
 app.set('view engine', 'ejs');
@@ -23,15 +23,15 @@ app.use(bodyParser.urlencoded({ extended: true, limit: '1mb' }));
 app.use(middleware.requestLog);
 app.use(middleware.errorPage);
 app.use(compress()); //压缩资源
-app.set(session({
-    secret: config.session_secret,
-    resave:false,
-    saveUninitialized:false,
-    name:'session_id',
-    cookie:{
-        maxAge: 5000
-    }
-}))
+// app.set(session({ //使用了登陆方式
+//     secret: config.session_secret,
+//     resave:false,
+//     saveUninitialized:false,
+//     name:'session_id',
+//     cookie:{
+//         maxAge: 5000
+//     }
+// }))
 
 //如果不是开发状态下,防止cusrf攻击，设置模板缓存
 if( !config.debug ){
