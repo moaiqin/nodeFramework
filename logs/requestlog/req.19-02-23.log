@@ -26,3 +26,18 @@ start 2019-02-23 18:42:41 GET /test?name=[1,2,3] ::1
 [2019-02-23T18:42:41.248] [INFO] default - 
 complete 200 (248ms) 
 
+[2019-02-23T22:15:19.987] [INFO] default - 
+start 2019-02-23 22:15:19 GET /test?name=[1,2,3] ::1
+[2019-02-23T22:15:19.993] [INFO] default - 
+complete 200 (992ms) 
+
+[2019-02-23T22:16:09.199] [INFO] default - 
+start 2019-02-23 22:16:09 GET /test?name=[1,2,3] ::1
+[2019-02-23T22:16:09.206] [INFO] default - 
+complete 200 (206ms) 
+
+[2019-02-23T23:44:55.519] [INFO] default - 
+start 2019-02-23 23:44:55 GET /test?name=[1,2,3] ::1
+[2019-02-23T23:44:55.533] [INFO] default - 
+complete 500 (533ms) 
+
