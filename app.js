@@ -13,6 +13,7 @@ const compress = require('compression');
 const csurf = require('csurf');
 // const session = require('express-session');
 const middleware = require('./middlewares');
+const cors = require('cors');
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
@@ -22,6 +23,7 @@ app.use(bodyParser.json({limit: '1mb'}));
 app.use(bodyParser.urlencoded({ extended: true, limit: '1mb' }));
 app.use(middleware.requestLog);
 app.use(middleware.errorPage);
+app.use('/cors',cors(config.corsOptions),require('./test/corsrouter'));
 app.use(compress()); //压缩资源
 // app.set(session({ //使用了登陆方式
 //     secret: config.session_secret,
@@ -46,7 +48,6 @@ if( !config.debug ){
 }
 // app.use(csurf({cookie:false}));
 app.use(middleware.checkCsrfToken(app));
-
 app.use('/',require('./test/test'));
 
 app.listen(config.port,() => {
