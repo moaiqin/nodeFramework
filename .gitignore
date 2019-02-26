@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 node_modules/
 build/
 npm-debug.log
 package-lock.json
-test.a
-=======
 # Logs
 logs
 *.log
@@ -69,4 +66,3 @@ logs/
 
 # next.js build output
 .next
->>>>>>> 9b13c41acc3edb140dad5bf42e998f15e1e4fda1
