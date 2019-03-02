@@ -14,7 +14,10 @@ const csurf = require('csurf');
 // const session = require('express-session');
 const middleware = require('./middlewares');
 const cors = require('cors');
+const router = require('./routers');
 
+
+require('./models');
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
 app.use('/public', express.static(static))
@@ -47,7 +50,8 @@ if( !config.debug ){
     app.set('view cache', true);
 }
 // app.use(csurf({cookie:false}));
-app.use(middleware.checkCsrfToken(app));
+// app.use(middleware.checkCsrfToken(app));
+app.use('/api',router);    
 app.use('/',require('./test/test'));
 
 app.listen(config.port,() => {

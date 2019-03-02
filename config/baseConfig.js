@@ -30,7 +30,8 @@ const config = {
             user: '982405672@qq.com',
             pass: 'raajlvqowiuybbij'  //设置的smtp授权码,到邮箱设置
         }
-    }
+    },
+    db: 'mongodb://localhost:27017/nodeTest'
 }
 
 module.exports = config;
